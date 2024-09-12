@@ -1,3 +1,6 @@
+# 集群节点
+TODO: create kubeadm cluster
+
 # 获取k8s集群node节点
 ```
 kubectl get pods -A
