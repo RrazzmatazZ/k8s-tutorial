@@ -1,0 +1,10 @@
+# nginx.yaml
+apiVersion: v1
+kind: Pod  # 资源类型=pod
+metadata:
+  name: nginx-pod  # 需要在当前命名空间中唯一
+  namespace: default # 默认是default，可省略
+spec:
+  containers: # pod内的容器组
+    - name: nginx-container
+      image: nginx  # 镜像默认来源 DockerHub
